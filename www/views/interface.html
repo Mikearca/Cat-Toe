@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interfaz de Usuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="/Cat_Toe/www/public/css/style.css" rel="stylesheet">
+    <link href="/Cat_Toe/www/public/css/int.css" rel="stylesheet">
+    <script src="/Cat_Toe/www/public/js/user.js"></script>
+
+</head>
+<body>
+<div class="header">
+    <img class="logos" src="/Cat_Toe/www/public/img/Logo copy.png" alt="LOGO">
+    <h1>Un juego desarrollado por estudiantes de TI</h1>
+</div>
+<div class="dos"></div>
+<div class="botones">
+    <ol><a href="/Cat_Toe/www/views/index.html"><button class="e1">Partida Rapida</button></a></ol>
+</div>
+<div class="dos"></div>
+<div class="botones">
+    <ol><a href="/Cat_Toe/www/views/masjuegos.html"><button class="e2">Más Juegos</button></a></ol>
+</div>
+<div class="dos"></div>
+<div class="botones">
+    <ol><a href="/Cat_Toe/www/views/menper.html"><button class="e1">Partida personalizada</button></a></ol>
+</div>
+<div class="dos"></div>
+<div class="botones">
+    <ol><a href="/Cat_Toe/www/views/pvp.html"><button class="e2">Juega con amigos</button></a></ol>
+</div>
+<div class="prefooter">
+
+</div>
+
+<footer>
+    <div class="footer">
+        <div class="preajustes"></div>
+        <div class="ajustes">
+            <a href="#" onclick="openSettingsView()"><img class="engrane" src="/Cat_Toe/www/public/img/engrane.png" alt="Engrane"></a>
+        </div>
+        <div class="entre">
+            <h1>Usuario:</h1>
+            <p id="username" class="max">Sin Nombre</p>
+        </div>
+        <div class="usuario">
+            <a href="#" onclick="openProfileView()"><img class="persona" src="/Cat_Toe/www/public/img/usuario.png" alt="Usuario"></a>
+        </div>
+        <div class="preajustes"></div>
+    </div>
+</footer>
+
+<!-- Perfil de Usuario -->
+<div id="profileView" class="profile-view" style="display: none;">
+    <span class="close-btn" onclick="closeProfileView()">&times;</span>
+    <img id="profileImage" src="/Cat_Toe/www/public/img/usuario.png" alt="Foto de Perfil" class="profile-picture">
+    <h2 style="text-align: center;" id="profileUsername">Sin Nombre</h2>
+</div>
+<!-- Ajustes -->
+<div id="settingsView" class="settings-view" style="display: none;">
+    <span class="close-btn" onclick="closeSettingsView()">&times;</span>
+    <h2>Ajustes</h2>
+    <div class="settings-buttons">
+        <button class="e1" onclick="openProfileSelectionView()">Foto de Perfil</button>
+        <button class="e2" onclick="openChangeUsernameView()">Nombre de Usuario</button>
+    </div>
+</div>
+<!-- seleccion foto de perfil -->
+<div id="profileSelectionView" class="profile-selection-view" style="display: none;">
+    <span class="close-btn" onclick="closeProfileSelectionView()">&times;</span>
+    <h1 style="margin: 30px;">Seleccionar Foto de Perfil</h1>
+    <img src="/Cat_Toe/www/public/img/calaca.jpg" alt="Foto de Perfil" style="height: 150px; width: 150px;" onclick="selectProfileImage('/Cat_Toe/www/public/img/calaca.jpg')">
+    <img src="/Cat_Toe/www/public/img/chad.jpg" alt="Foto de Perfil" style="height: 150px; width: 150px;" onclick="selectProfileImage('/Cat_Toe/www/public/img/chad.jpg')">
+    <img src="/Cat_Toe/www/public/img/kwai.jpg" alt="Foto de Perfil" style="height: 150px; width: 150px;" onclick="selectProfileImage('/Cat_Toe/www/public/img/kwai.jpg')">
+    <img src="/Cat_Toe/www/public/img/vato.jpg" alt="Foto de Perfil" style="height: 150px; width: 150px;" onclick="selectProfileImage('/Cat_Toe/www/public/img/vato.jpg')">
+    <img src="/Cat_Toe/www/public/img/vault.jpg" alt="Foto de Perfil" style="height: 150px; width: 150px;" onclick="selectProfileImage('/Cat_Toe/www/public/img/vault.jpg')">
+    <img src="/Cat_Toe/www/public/img/mono.jpg" alt="Foto de Perfil" style="height: 150px; width: 150px;" onclick="selectProfileImage('/Cat_Toe/www/public/img/mono.jpg')">
+    <img src="/Cat_Toe/www/public/img/panda.jpg" alt="Foto de Perfil" style="height: 150px; width: 150px;" onclick="selectProfileImage('/Cat_Toe/www/public/img/panda.jpg')">
+    <button class="save-button" onclick="saveSelectedProfile()">Cambiar</button>
+</div>
+<!-- Cambiar nombre de Usuario -->
+<div id="changeUsernameView" class="change-username-view" style="display: none;">
+    <span class="close-btn" onclick="closeChangeUsernameView()">&times;</span>
+    <h1 style="margin: 30px;">Nuevo Nombre de Usuario</h1>
+    <form id="changeUsernameForm" onsubmit="changeUsername(); return false;">
+        <input type="text" id="newUsername" name="newUsername" placeholder="Nuevo Usuario" required>
+        <button class="save-button" type="submit">Guardar</button>
+    </form>
+</div>
+</body>
+</html>

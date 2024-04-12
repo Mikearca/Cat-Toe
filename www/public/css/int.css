@@ -1,0 +1,282 @@
+#background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para que el fondo esté detrás de todo */
+}
+
+.header {
+    text-align: center;
+}
+
+.dos {
+    width: auto;
+    height: 200px;
+}
+
+.e1 {
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    padding: 30px 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.e2 {
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    padding: 30px 100px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.prefooter {
+    height: 200px;
+    width: auto;
+}
+
+.footer {
+    display: flex;
+}
+
+.preajustes {
+    width: 50px;
+}
+
+.ajustes {
+    text-align: left;
+}
+
+.entre {
+    width: 700px;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: medium;
+}
+
+.max {
+    font-size: 50px;
+}
+
+.usuario {
+    text-align: right;
+}
+
+.engrane {
+    width: 100px;
+    height: 100px;
+}
+
+.persona {
+    width: 100px;
+    height: 100px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.max {
+    font-size: 50px;
+}
+
+.profile-view {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que la vista esté encima de todo */
+    width: 70%; /* Ajusta el ancho según sea necesario */
+    max-width: 800px; /* Establece un ancho máximo */
+    height: 80%; /* Ajusta la altura según sea necesario */
+    max-height: 600px; /* Establece una altura máxima */
+    overflow: auto; /* Agrega desplazamiento si es necesario */
+    text-align: center; /* Centra el contenido */
+
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px; /* Aumenta el tamaño del icono */
+    padding: 10px; /* Agrega espacio alrededor del icono */
+    color: rgba(255, 0, 0, 0.636);
+}
+
+/* Estilos adicionales para la foto de perfil */
+.profile-picture {
+    width: 300px; /* Aumenta el ancho de la foto de perfil */
+    height: 300px; /* Aumenta la altura de la foto de perfil */
+    border-radius: 50%; /* Hace que la foto de perfil sea redonda */
+    display: block;
+    margin: 0 auto; /* Centra la foto de perfil horizontalmente */
+    margin-bottom: 20px; /* Agrega espacio debajo de la foto de perfil */
+}
+
+/* Estilos adicionales para el nombre de usuario */
+#profileUsername {
+    font-size: 80px; /* Aumenta el tamaño del nombre de usuario */
+    margin-top: 50px; /* Agrega espacio entre la foto de perfil y el nombre de usuario */
+}
+
+/* Agregar espacio entre los botones y el footer */
+.footer {
+    margin-top: 20px;
+}
+
+.settings-view {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: rgb(255, 255, 255);
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+width: 70%;
+max-width: 800px;
+height: 70%;
+max-height: 600px;
+overflow: auto;
+text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px;
+    padding: 10px;
+    color: rgba(255, 0, 0, 0.636);
+}
+
+.settings-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.settings-buttons button {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 50px;
+}
+
+.profile-selection-view {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 70%;
+    max-width: 800px;
+    height: 70%;
+    max-height: 600px;
+    overflow: auto;
+    text-align: center;
+}
+
+.profile-selection-view img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.save-button {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+}
+
+.change-username-view {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 70%;
+    max-width: 800px;
+    height: 70%;
+    max-height: 700px;
+    text-align: center;
+}
+
+.change-username-view input[type="text"] {
+    width: calc(50% - 100px);
+    padding: 50px;
+    margin: 100px 0;
+    font-size: 20px;
+}
+
+.change-username-view button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

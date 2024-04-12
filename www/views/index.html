@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/www/public/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+           <button class="button-option"></button>
+       </div>
+       <div class="borrar">
+        <button id="restart">Borrar</button>
+        <button class="volver" onclick="window.location.href = '/www/views/interface.html';">Volver</button>
+       </div>
+    </div>
+    
+    <div class="popup hide">
+        <p id="message"></p>
+        <button id="new-game">Nuevo Juego</button>
+        <button  id="new-game" onclick="window.location.href = '/www/views/interface.html';">Volver</button>
+   </div>
+   
+    <!-- Script -->
+    <script src="/www/public/js/main.js"></script>
+    <script src="/www/public/js/p1.js"></script>
+</body>
+</html>
